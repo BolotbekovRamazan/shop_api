@@ -4,22 +4,23 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Category',
+            name="Category",
             fields=[
-                ('slug', models.SlugField(blank=True, primary_key=True, serialize=False)),
-                ('title', models.CharField(max_length=100, unique=True)),
+                (
+                    "slug",
+                    models.SlugField(blank=True, primary_key=True, serialize=False),
+                ),
+                ("title", models.CharField(max_length=100, unique=True)),
             ],
             options={
-                'verbose_name': 'Category',
-                'verbose_name_plural': 'Categories',
+                "verbose_name": "Category",
+                "verbose_name_plural": "Categories",
             },
         ),
     ]
